@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo color gris claro */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #00796b; /* Verde oscuro */
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal de filas */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Filas */
+.fila {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Diseño de cada persona */
+.persona {
+    text-align: center;
+}
+
+/* Estilos de imágenes */
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00FF99; /* Verde neón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.8);
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    .fila {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
